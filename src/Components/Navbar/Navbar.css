@@ -1,0 +1,24 @@
+.block.row.center{
+    background-color:#71777f;   
+    height: 80px;
+    font-family: 'Balsamiq Sans', cursive;;
+    align-items: center;
+}
+
+.block.row.center .links {
+    max-height: 80px;
+}
+
+.block.row.center .links a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 15px;
+    border: 2px solid #20B2AA;
+    border-radius: 8px;
+    padding: 2px;
+}
+.block.row.center .links a:hover{
+    background-color: #53708e;
+}
+
