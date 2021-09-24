@@ -1,33 +1,37 @@
 import React from 'react';
-import "./Navbar.css";
-
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = (props) => {
-  return (
-    <header className="block row center">
-      <div>
-        <a href="#/">
-          <h1>GROCERY SHOPPING CART</h1>
-          <div className="links">
-          <a href="/home">HOME</a>
-          <a href="/products">PRODUCTS</a>
-          <a href="/contact">CONTACT</a>
-          <a href="/enquiry">ENQUIRY</a>
-        </div>
-        </a>  
-      </div>
-      <div>
-        <a href="#/cart">
-          Cart{' '} 
-          {props.countCartItems ? (
-            <button className="badge">{props.countCartItems}</button>
-          ) : (
-            ''
-          )}
-        </a>{' '}
-        <a href="#/signin"> SignIn</a>
-      </div>
-    </header>
-  );
-}
+	return (
+		<header className="block row center">
+			<div>
+				<Link to="/">
+					<h1 className="mx-0 my-2 text-2xl">
+						GROCERY SHOPPING CART
+					</h1>
+					<div className="links">
+						<Link to="/">HOME</Link>
+						<Link to="/">PRODUCTS</Link>
+						<Link to="/contact">CONTACT</Link>
+						<Link to="/inquiry">INQUIRY</Link>
+					</div>
+				</Link>
+			</div>
+			<div>
+				<Link to="/">
+					Cart{' '}
+					{props.countCartItems ? (
+						<button className="badge">
+							{props.countCartItems}
+						</button>
+					) : (
+						''
+					)}
+				</Link>{' '}
+				<Link to="/"> SignIn</Link>
+			</div>
+		</header>
+	);
+};
 export default Navbar;

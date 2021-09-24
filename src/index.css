@@ -1,81 +1,75 @@
 body {
-  font-family: 'Helvetica';
-}
-h1,
-h2,
-h3 {
-  margin: 8px 0;
-}
-h1 {
-  font-size: 24px;
-}
-h2 {
-  font-size: 18px;
-}
-h3 {
-  font-size: 16px;
-}
-a {
-  text-decoration: none;
-}
-.row {
-  display: flex;
-  justify-content: space-between;
-}
-.row.center {
-  align-items: center;
-}
-.col-1 {
-  flex: 1;
-}
-.col-2 {
-  flex: 2;
-}
-.block {
-  background-color: rgb(175,238,238);
-  padding: 16px;
-  margin: 8px;
-  border-radius: 8px;
+	font-family: 'Helvetica';
 }
 
-.block.row.center{
-  background-color: pink;
+hr {
+	margin: 5px;
+	width: 100%;
+	border-style: dashed;
+	border-top-width: 3px;
+	border-color: black !important;
+}
+
+table,
+th,
+td {
+	background-color: rgba(95, 158, 160, 1);
+	font-size: large;
+}
+
+a {
+	text-decoration: none;
+}
+.row {
+	display: flex;
+	justify-content: space-between;
+}
+.row.center {
+	align-items: center;
+}
+.col-1 {
+	flex: 1;
+}
+.col-2 {
+	flex: 2;
+}
+.block {
+	background-color: rgb(175, 238, 238);
+	padding: 16px;
+	margin: 8px;
+	border-radius: 8px;
+}
+
+.block.row.center {
+	background-color: pink;
 }
 .text-right {
-  text-align: right;
+	text-align: right;
 }
 img.small {
-  max-height: 9rem;
+	max-height: 9rem;
 }
 button {
-  font-size: 1rem;
-  padding: 0.2rem;
-  margin: 0.1rem;
-  border-radius: 0.5rem;
-  border: 0.1rem #a74040 solid;
-  background-color: #386aa7;
-  width: 100%;
-  cursor: pointer;
+	font-size: 0.8rem;
+	padding: 0.2rem;
+	margin: 0.1rem;
+	border-radius: 0.5rem;
+	border: 0.1rem #a74040 solid;
+	background-color: #f0c040;
+	width: 100%;
+	cursor: pointer;
 }
 button.add {
-  background-color: #40c0f0;
-  width: 24px;
+	background-color: #40c0f0;
+	width: 24px;
 }
 button.remove {
-  background-color: #f04040;
-  width: 24px;
+	background-color: #f04040;
+	width: 24px;
 }
 button.badge {
-  background-color: #f04040;
-  border: none;
-  color: #ffffff;
-  width: 24px;
-}
-table,th,td{
-  border: 2px solid black;
-  border-collapse: collapse;
-  background-color: cadetblue;
-  font-size: large;
-  margin: 0.6rem;
-  padding: 0.5rem;
+	background-color: #f04040;
+	border: none;
+	color: #ffffff;
+	width: 24px;
 }

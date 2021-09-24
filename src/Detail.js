@@ -2,31 +2,31 @@ const Detail = {
     products: [
       {
         id: '1',
-        title: 'Bread',
+        name: 'Bread',
         price: 1.10,
         image:('bread.jpg'),
       },
       {
         id: '2',
-        title: 'Milk',
+        name: 'Milk',
         price: 0.5,
         image: 'milk.jpg',
       },
       {
         id: '3',
-        title: 'Cheese',
+        name: 'Cheese',
         price: 0.9,
         image: 'cheese.jpg',
       },
       {
         id: '4',
-        title: 'Soup',
+        name: 'Soup',
         price: 0.6,
         image:('soup.jpg'),
       },
       {
         id: '5',
-        title: 'Butter',
+        name: 'Butter',
         price: 1.2,
         image: 'butter.jpg',
       },
