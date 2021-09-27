@@ -1,7 +1,6 @@
 const reducer = (cartItems = [], action) => {
 	switch (action.type) {
 		case 'ADDTOCART': {
-			console.log('Add to cart');
 			const exist = cartItems.find(
 				(item) => item.id === action.product.id
 			);
@@ -16,10 +15,10 @@ const reducer = (cartItems = [], action) => {
 			}
 		}
 		case 'REMOVEFROMCART': {
-			const exist = cartItems.find((x) => x.id === action.product.id);
+			const exist = cartItems.find((item) => item.id === action.product.id);
 			if (exist.qty === 1) {
-				return cartItems.filter(
-					(item) => item.id !== action.product.id
+				return cartItems.filter((item) => 
+				item.id !== action.product.id
 				);
 			} else {
 				return cartItems.map((item) =>
@@ -30,7 +29,7 @@ const reducer = (cartItems = [], action) => {
 			}
 		}
 		default:
-			return cartItems;
+			return cartItems; //if nothing is added or subtracted.
 	}
 };
 

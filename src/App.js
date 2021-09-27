@@ -17,20 +17,16 @@ function App() {
 				<Navbar countCartItems={cartItems.length}></Navbar>
 				<Switch>
 					<Route path="/" exact>
-						<main>
+						<div>
 							<div className="row">
 								<Main products={products}></Main>
 								<Basket />
 							</div>
 							<Offers />
-						</main>
+						</div>
 					</Route>
-					<Route path="/contact" exact>
-						<Contact />
-					</Route>
-					<Route path="/inquiry" exact>
-						<Inquiry />
-					</Route>
+					<Route path="/contact" exact><Contact /></Route>
+					<Route path="/inquiry" exact><Inquiry /></Route>
 				</Switch>
 			</div>
 		</Router>

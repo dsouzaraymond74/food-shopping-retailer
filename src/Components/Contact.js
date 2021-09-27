@@ -51,7 +51,7 @@ const Contact = () => {
 					></textarea>
 					<label
 						for="message"
-						class="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text"
+						className="absolute tracking-wide py-2 px-4 mb-4 opacity-0 leading-tight block top-0 left-0 cursor-text "
 					>
 						Message...
 					</label>
@@ -60,7 +60,7 @@ const Contact = () => {
 
 			<div class="">
 				<button
-					class="w-full shadow bg-teal hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
+					class="w-full shadow bg-teal hover:bg-teal-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded "
 					type="submit"
 				>
 					Send

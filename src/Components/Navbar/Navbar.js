@@ -28,8 +28,8 @@ const Navbar = (props) => {
 					) : (
 						''
 					)}
-				</Link>{' '}
-				<Link to="/"> SignIn</Link>
+				</Link>
+				<Link to="/"> SignUp</Link>
 			</div>
 		</header>
 	);

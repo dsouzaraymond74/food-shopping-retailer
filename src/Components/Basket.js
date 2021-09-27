@@ -14,9 +14,9 @@ const Basket = () => {
 	let cartItems = useSelector((state) => state);
 	const dispatch = useDispatch();
 
-	let itemsPrice = 0;
+	let subTotal = 0;
 	cartItems.forEach((item) => {
-		itemsPrice = itemsPrice + item.qty * item.price;
+		subTotal = subTotal + item.qty * item.price;
 	});
 
 	const { Butter, Soup, Cheese, Bread, Milk } = groupBy(cartItems);
@@ -60,7 +60,7 @@ const Basket = () => {
 //**************** */
 	discount = SoupAndBreadComboDiscount + cheeseCombosDiscount;
 
-	const totalPrice = itemsPrice - discount;
+	const totalPrice = subTotal - discount;
 
 //**************** */
 	return (
@@ -68,6 +68,7 @@ const Basket = () => {
 			<h2 className="mx-0 my-2 text-lg">Cart Items</h2>
 			<div>
 				{cartItems.length === 0 && <div>Cart is empty</div>}
+
 				{cartItems.map((item) => (
 					<div key={item.id} className="row">
 						<div className="col-2">{item.name}</div>
@@ -98,7 +99,7 @@ const Basket = () => {
 						<div className="row">
 							<div className="col-2">SUB TOTAL</div>
 							<div className="col-1 text-right">
-								£{itemsPrice.toFixed(2)}
+								£{subTotal.toFixed(2)}
 							</div>
 						</div>
 						<div className="row">
