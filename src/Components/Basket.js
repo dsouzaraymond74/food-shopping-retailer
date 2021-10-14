@@ -4,8 +4,8 @@ import { addToCart, removeFromCart } from '../Actions';
 
 function groupBy(array) {
 	let hash = {};
-	for (let i = 0; i < array.length; i++) {
-		hash[array[i]['name']] = array[i];
+	for (let item = 0; item < array.length; item++) {
+		hash[array[item]['name']] = array[item];
 	}
 	return hash;
 }
@@ -28,15 +28,16 @@ const Basket = () => {
 	let milkQty = Milk?.qty;
 
 	let discount = 0;
-//****************** */
+
 	let SoupAndBreadCombo = 0;
 	for (let i = 1, breadNos = breadQty; i <= soupQty; i++) {
 		breadNos = breadNos - 2;
 		if (breadNos < 0) {
 			break;
-		}
+		}else{
 		SoupAndBreadCombo++;
 	}
+}
 	let SoupAndBreadComboDiscount = SoupAndBreadCombo * Bread?.price;
 	if (!isNaN(SoupAndBreadComboDiscount)) {
 		SoupAndBreadComboDiscount = parseFloat(
@@ -45,7 +46,7 @@ const Basket = () => {
 	} else {
 		SoupAndBreadComboDiscount = 0;
 	}
-//******************* */
+
 	let cheeseCombos = 0;
 	let cheeseNos = cheeseQty;
 	cheeseCombos = Math.floor(cheeseNos / 4) * 2;
@@ -57,12 +58,12 @@ const Basket = () => {
 	} else {
 		cheeseCombosDiscount = 0;
 	}
-//**************** */
+
 	discount = SoupAndBreadComboDiscount + cheeseCombosDiscount;
 
 	const totalPrice = subTotal - discount;
 
-//**************** */
+
 	return (
 		<aside className="block col-1">
 			<h2 className="mx-0 my-2 text-lg">Cart Items</h2>
