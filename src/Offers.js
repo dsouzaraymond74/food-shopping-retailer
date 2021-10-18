@@ -34,6 +34,14 @@ const Offers = () => {
 						Get 2 extra free
 					</td>
 				</tr>
+				<tr>
+					<td className="border-collapse border-black border-solid border-2 m-2 p-2">
+						Buy two butter
+					</td>
+					<td className="border-collapse border-black border-solid border-2 m-2 p-2">
+						Get 1 extra free
+					</td>
+				</tr>
 			</table>
 		</div>
 	);

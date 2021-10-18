@@ -7,7 +7,7 @@ const Navbar = (props) => {
 		<header className="block row center">
 			<div>
 				<Link to="/">
-					<h1 className="mx-0 my-2 text-2xl">
+					<h1 className=" my-2 text-2xl">
 						GROCERY SHOPPING CART
 					</h1>
 					<div className="links">

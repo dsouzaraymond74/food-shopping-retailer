@@ -59,7 +59,19 @@ const Basket = () => {
 		cheeseCombosDiscount = 0;
 	}
 
-	discount = SoupAndBreadComboDiscount + cheeseCombosDiscount;
+	let butterCombos = 0;
+	let butterNos = butterQty;
+	butterCombos = Math.floor(butterNos/3)*1;
+	butterNos = butterNos % 3;
+	let butterCombosDiscount = butterCombos * Butter?.price;
+	if(!isNaN(butterCombosDiscount)) {
+		butterCombosDiscount = parseFloat(butterCombosDiscount.toFixed(2));
+	} else {
+		butterCombosDiscount=0;
+	}
+
+
+	discount = SoupAndBreadComboDiscount + cheeseCombosDiscount + butterCombosDiscount;
 
 	const totalPrice = subTotal - discount;
 
