@@ -25,7 +25,7 @@ const Basket = () => {
 	let soupQty = Soup?.qty;
 	let cheeseQty = Cheese?.qty;
 	let breadQty = Bread?.qty;
-	let milkQty = Milk?.qty;
+	//let milkQty = Milk?.qty;
 
 	let discount = 0;
 
